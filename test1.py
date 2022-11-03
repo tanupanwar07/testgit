@@ -3,12 +3,12 @@ client= pymongo.MongoClient("mongodb+srv://tanupanwar:rtYX5ckBv0CKHf6c@cluster0.
 db=client.test
 print(db)
 
-d={
+d1={
     "name":"tanu",
      "surname":"panwar",
     "email":"tp220799@gmail.com"
 }
 db1=client['MONGODB']
 coll=db1['test11']
-coll.insert_one(d)
+coll.insert_one(d1)
 
